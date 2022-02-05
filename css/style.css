@@ -1,0 +1,25 @@
+
+*{
+    background-color: #F0EBD8;
+}
+
+.foto2 {
+    width: 100%;
+   }
+
+.textintro {
+    background-color: #1D2D44;
+    color:#F0EBD8;
+    padding: 5%;
+    text-align: center;
+    font-size: 80px;
+    
+}
+
+nav {
+    background-color: #0D1321;
+    color: #F0EBD8;
+    text-align: center;
+    border: #748CAB;
+   
+}
