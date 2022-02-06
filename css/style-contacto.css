@@ -34,7 +34,7 @@
    .list {
     display: flex;
     gap: 1em;
-    font-size: 18px;
+    font-size: 15px;
    }
    .list li:hover {
     background-color: #F0EBD8;
@@ -47,5 +47,4 @@
    form {
        display: flex;
        margin: 2%;
-       white-space: pre-wrap;
    }

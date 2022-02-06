@@ -1,25 +1,14 @@
-
-.foto2 {
-    width: 100%;
-    height: 100%;
-   }
-
-.textintro {
-    background-color: #1D2D44;
-    color:#F0EBD8;
-    padding: 15%;
-    text-align: center;
-    font-size: 80px;
-    width: 100%;
-    
-}
-
 /* --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #F0EBD8
+    
+   }
+
+   html {
+    scroll-behavior: smooth;
    }
 
    body {
@@ -34,13 +23,11 @@
 
    /* --- styling Navbar --- */
 
-   /* NAVBAR STYLING STARTS */
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 8px;
     background-color: #F0EBD8;
     color: #1D2D44;
     width: 100%;
@@ -52,8 +39,8 @@
 
    .list {
     display: flex;
-    gap: 0.2px;
-    font-size: 18px;
+    font-size: 15px;
+    align-items: center;
    }
    .list li:hover {
     background-color: #F0EBD8;
@@ -64,26 +51,102 @@
     padding: 5px 14px;
    }
 
-   /* APPLYING MEDIA QUERIES 
-@media (min-width: 768px) {
-    .list { 
-     display:none;
-     position: absolute;
-     background-color:teal;
-     right: 0;
-     left: 0;
-     text-align: center;
-     padding: 16px 0;
+.intro {
+    display: flex;
+    align-self: stretch;
+    background-color: #1D2D44;
+    color:#F0EBD8;
+    text-align: center;
+    font-size: 30px;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textintro {
+    background-color: #1D2D44;
+    line-height: 80px;
+}
+
+.foto2 {
+    width: 100vw;
+    height: auto;
+    border-radius: 1.5rem 6rem 3rem;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1rem;
     }
 
-    .list li:hover {
-        display: inline-block;
-        background-color:#4c9e9e;
-        transition: 0.3s ease;
-       }
-       .list li + li {
-        margin-top: 12px;
-       }
-       input[type=checkbox]:checked ~ .menu{
-        display: block;
-       } */
+.subtitle {
+    font-size: 30px;
+    color: #1D2D44;
+    text-align: center;
+}
+
+/* -- portfolio style -- */
+
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio__img {
+    width: 40vw; 
+    display: flex;
+}
+.portfolio > h2 {
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 10%;
+    border: 1px solid #1D2D44;
+    background-color: #1D2D44;
+    color: #F0EBD8;
+}
+
+    /* --- jugando con flexbox --- */
+
+.fototexto {
+    display: flex;
+    flex-direction: column;
+}
+.features {
+display: flex;
+flex-direction: column;
+}
+.features p {
+    font-style: italic;
+}
+
+.subtitle {
+    margin-bottom: 5%;
+    border: 1px solid #1D2D44;
+    color: #F0EBD8;
+    background-color: #1D2D44;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .intro {
+        height: 100vh;
+        width: 100vw;  
+        font-size: 60px;
+    }
+
+    .foto2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 25%;
+    padding: auto;
+    }
+
+
+    .fotos > .column {
+        display: flex;
+        width: 100%;
+        padding: 5%;
+    }
+    }
