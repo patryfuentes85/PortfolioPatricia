@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #F0EBD8
-    
    }
 
    html {
@@ -97,13 +96,76 @@
     width: 40vw; 
     display: flex;
 }
-.portfolio > h2 {
+h2 {
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 8%;
+    border: 1px solid #1D2D44;
+    background-color: #1D2D44;
+    color: #F0EBD8;
+}
+
+/* -- contacto style ---*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 3%;
+    justify-content: space-evenly;
+
+}
+#contact {
     text-align: center;
     line-height: 140%;
     margin-bottom: 10%;
     border: 1px solid #1D2D44;
     background-color: #1D2D44;
     color: #F0EBD8;
+}
+.formcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw
+
+}
+
+iframe {
+    width: 100%;
+    height: 40vh; 
+  
+}
+
+.textomapa {
+    text-align: center;
+}
+
+footer > p {
+    background-color: #03070c;
+    color:#F0EBD8;
+    border:#F0EBD8;
+    padding: 1%;
+    width: 100vw;
+    text-align: left;
+    bottom: 0;
+    position: fixed;
+    font-size: 10px;
+
+}
+
+input {
+    background-color: #42586be5;
+    color: #F0EBD8;
+    border-radius: 10%;
+    margin-top: 1%;
+}
+#submit {
+    margin-top: 7%;
+    background-color: #778DA9;
+    color: #F0EBD8;
+    font-weight: bold;
+    padding: 0.5%;
+
 }
 
     /* --- jugando con flexbox --- */
@@ -115,6 +177,7 @@
 .features {
 display: flex;
 flex-direction: column;
+margin-bottom: 10%;
 }
 .features p {
     font-style: italic;
@@ -128,8 +191,14 @@ flex-direction: column;
 }
 
 
-
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1200px) {
+    
+    .list {
+        display: flex;
+        font-size: 19px;
+        align-items: center;
+       }
+    
     .intro {
         height: 100vh;
         width: 100vw;  
@@ -137,16 +206,40 @@ flex-direction: column;
     }
 
     .foto2 {
-    width: 50%;
-    height: 50%;
-    border-radius: 25%;
-    padding: auto;
-    }
+        width: 30vw;
+        height: auto;
+        border-radius: 1.5rem 6rem 3rem;
+        padding: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
 
-    .fotos > .column {
+    .fototexto {
         display: flex;
-        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10%;
         padding: 5%;
+        justify-content: space-evenly;
+        font-size: 130%;
     }
+
+    .lenguages {
+        margin: 5%;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .travel {
+        margin: 5%;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .happiness {
+        margin: 5%;
+        padding: 1%;
+        text-align: center;
+    }
+
     }
