@@ -6,17 +6,17 @@
     background-color: #F0EBD8
    }
 
-   html {
+html {
     scroll-behavior: smooth;
    }
 
-   body {
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    }
-   a {
+a {
     text-decoration: none;
    }
-   li {
+li {
     list-style: none;
    }
 
@@ -32,21 +32,21 @@
     width: 100%;
    }
 
-   .nav-list a {
+.nav-list a {
     color: rgb(7, 6, 4);
    }
 
-   .list {
+.list {
     display: flex;
     font-size: 15px;
     align-items: center;
    }
-   .list li:hover {
-    background-color: #F0EBD8;
+.list li:hover {
+    background-color: #778da98f;
     border-radius: 5px;
 
    }
-   .list li {
+.list li {
     padding: 5px 14px;
    }
 
@@ -92,6 +92,9 @@
     align-items: center;
     justify-content: center;
 }
+.fotos:hover {
+    filter: grayscale(6);
+  }
 .portfolio__img {
     width: 40vw; 
     display: flex;
@@ -104,6 +107,14 @@ h2 {
     background-color: #1D2D44;
     color: #F0EBD8;
 }
+.video {
+    width: 80vw;
+    height: 64vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
 /* -- contacto style ---*/
 form {
@@ -117,7 +128,7 @@ form {
 #contact {
     text-align: center;
     line-height: 140%;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     border: 1px solid #1D2D44;
     background-color: #1D2D44;
     color: #F0EBD8;
@@ -126,8 +137,16 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100vw
+    width: 100vw;
+    padding: 1%;
+}
 
+.map {
+    margin-top: 20%;
+}
+.map > h3 {
+    background-color: #1D2D44;
+    color:#F0EBD8;
 }
 
 iframe {
@@ -165,6 +184,35 @@ input {
     color: #F0EBD8;
     font-weight: bold;
     padding: 0.5%;
+
+}
+
+/* -- skills --*/
+
+#git {
+    align-self: center;
+    margin-bottom: 2%;
+    width: 10vw;
+    height: auto;
+}
+
+.nube {
+    display: box;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+.nube:hover {
+    background-color: darkgoldenrod;
+}
+
+.about-me-text {
+    width: 100vw;
+    font-style: italic;
+    font-size: 2rem;
 
 }
 
@@ -208,6 +256,7 @@ margin-bottom: 10%;
     .foto2 {
         width: 30vw;
         height: auto;
+        margin-bottom: 15%;
         border-radius: 1.5rem 6rem 3rem;
         padding: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -225,7 +274,7 @@ margin-bottom: 10%;
     }
 
     .lenguages {
-        margin: 5%;
+        margin:  5%;
         padding: 1%;
         text-align: center;
     }
@@ -242,4 +291,38 @@ margin-bottom: 10%;
         text-align: center;
     }
 
+    .video {
+        width: 60vw;
+        height: 60vh;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .formcontact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        padding: 1%;
+    }
+
+    .map {
+        width: 60vw;
+        height: 40vh;
+        margin-top: 5%;
+    }
+    footer > p {
+        background-color: #03070c;
+        color:#F0EBD8;
+        border:#F0EBD8;
+        padding: 1%;
+        width: 100vw;
+        text-align: left;
+        bottom: 0;
+        position: fixed;
+        font-size: 10px;
+        text-align: left;
+    
+    }
     }
